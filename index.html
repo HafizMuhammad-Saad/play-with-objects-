@@ -4,55 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <title>Practice . . .</title>
-    <style>
-        body {
-            font-family: cursive;
-        }
-        .crimson {
-            background-color: crimson;
-        }
-        .forestgreen {
-            background-color: forestgreen;
-        }
-    </style>
-    <!-- <style>
-        table {
-  width: 80%;
-  margin: 20px auto;
-  border-collapse: collapse;
-  font-family: Arial, sans-serif;
-}
-
-th, td {
-  border: 1px solid #ccc;
-  padding: 10px;
-  text-align: center;
-}
-
-th {
-  background-color: #333;
-  color: #fff;
-}
-
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-tr:hover {
-  background-color: #ddd;
-  cursor: pointer;
-}
-
-    </style> -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container my-4">
+
+
+
+        <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary" data-mdb-modal-init data-mdb-target="#staticBackdrop2">
+            SignUp
+        </button>
+
+        <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary" data-mdb-modal-init data-mdb-target="#staticBackdrop1">
+            LogIn
+        </button>
+
+    <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+<div class="modal-dialog d-flex justify-content-center">
+<div class="modal-content w-75">
+    <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel2">Sign up</h5>
+        <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body p-4">
+        <form>
+            <!-- Name input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+                <input type="text" id="name2" class="form-control" />
+                <label class="form-label" for="name2">Name</label>
+            </div>
+
+            <!-- Email input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+                <input type="email" id="email2" class="form-control" />
+                <label class="form-label" for="email2">Email address</label>
+            </div>
+
+            <!-- password input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+                <input type="password" id="password2" class="form-control" />
+                <label class="form-label" for="password2">Password</label>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block">Sign up</button>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+<!-- Modal -->
+
+                  <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+<div class="modal-dialog d-flex justify-content-center">
+<div class="modal-content w-75">
+    <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel1">Sign in</h5>
+        <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body p-4">
+        <form>
+            <!-- Email input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+                <input type="email" id="email1" class="form-control" />
+                <label class="form-label" for="email1">Email address</label>
+            </div>
+
+            <!-- password input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+                <input type="password" id="password1" class="form-control" />
+                <label class="form-label" for="password1">Password</label>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block" onclick="show()">Login</button>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="container my-4">
 
     </div>
     <div class="main container">
 
-    </div>
+    </div> -->
 
     <!-- <div>
         <input type="number" id="maxPriceInput" placeholder="Enter max price" />
@@ -67,6 +123,11 @@ tr:hover {
         </table>
 
     </div> -->
+    <script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.1.0/mdb.umd.min.js"
+></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
